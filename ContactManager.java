@@ -1,8 +1,8 @@
 import java.util.*; 
- 
-public class ContactManager { 
- 
-    public static void main(String[] args) { 
+
+public class ContactManager {
+
+    public static void main(String[] args) {
  
         HashMap<String, Contact> contacts = new HashMap<>(); 
  
