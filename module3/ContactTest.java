@@ -3,7 +3,11 @@ package module3;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*; 
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import module3.Contact;
 
 public class ContactTest {
@@ -39,5 +43,12 @@ public class ContactTest {
     @Test
     void toString_containsPhone() {
         assertTrue(contact.toString().contains("712 4389"));
+    }
+
+    @Test
+    void bool_checkNullHandling() {
+        HashMap<String, Contact> contacts = new HashMap<>(); 
+        contacts.put(contact.getName(), contact);
+        assertNull(contacts.get("Charlie X"));
     }
 }
