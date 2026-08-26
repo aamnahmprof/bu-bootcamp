@@ -54,7 +54,7 @@ public class GradeAnalyzer {
         if (scores.isEmpty()) {
             average = 0.0;
         } else {
-            int sum = 0;
+            double sum = 0;
             for (int i = 0; i < scores.size(); i++) {
                 sum += scores.get(i);
             }
